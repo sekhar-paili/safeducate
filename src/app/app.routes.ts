@@ -31,5 +31,6 @@ export const routes: Routes = [
         path: 'student-corner',
         loadComponent: () => import('./Features/STUDENT-CORNER/student-corner/student-corner.component').then(c => c.StudentCornerComponent)
     },
-    { path: '**', pathMatch: 'full',  component: PageNotFoundComponent }
+    { path: '**', pathMatch: 'full', redirectTo:"page-not-found"},
+    { path:"page-not-found", component: PageNotFoundComponent }
 ]
