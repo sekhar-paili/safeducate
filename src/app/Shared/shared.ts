@@ -1,6 +1,6 @@
-import { COMMON_COMPONENTS } from "./components";
-import { COMMON_DIRECTIVES } from "./directives";
-import { COMMON_PIPES } from "./pipes";
+import { COMMON_COMPONENTS } from "./components/shared-components";
+import { COMMON_DIRECTIVES } from "./directives/shared-directives";
+import { COMMON_PIPES } from "./pipes/shared-pipes";
 
 export const SHARED = [
     COMMON_COMPONENTS,
