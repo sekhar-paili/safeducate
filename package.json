@@ -3,10 +3,20 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+
     "start": "ng serve",
+    "start:dev": "ng serve --configuration=development",
+    "start:qa": "ng serve --configuration=qa",
+    "start:prod": "ng serve --configuration=production",
+
     "build": "ng build",
+    "build:dev": "ng build --configuration=development",
+    "build:qa": "ng build --configuration=qa",
+    "build:prod": "ng build --configuration=production",
+
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    
     "serve:ssr:safeducate": "node dist/safeducate/server/server.mjs",
     "lint": "ng lint"
   },
