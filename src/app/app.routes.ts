@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './Features/HOME/home/home.component';
+import { PageNotFoundComponent } from './Features/components/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
     {
@@ -29,5 +30,6 @@ export const routes: Routes = [
     {
         path: 'student-corner',
         loadComponent: () => import('./Features/STUDENT-CORNER/student-corner/student-corner.component').then(c => c.StudentCornerComponent)
-    }
+    },
+    { path: '**', pathMatch: 'full',  component: PageNotFoundComponent }
 ]
